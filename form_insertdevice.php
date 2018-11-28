@@ -1,0 +1,30 @@
+<?php
+echo "<div class='modal fade' id='newRaspberry' role='dialog'>";
+echo "<div class='modal-dialog'>";
+echo "<div class='modal-content'>";
+echo "  <div class='modal-header'>";
+echo "      <button type='button' class='close' data-dismiss='modal'>&times;</button>";
+echo "      <h4 class='modal-title'>neuen Raspberry Pi anlegen</h4>";
+echo "  </div>";
+echo "  <div class='modal-body'>";
+echo "      <form action= 'script_adraspberry.php' method='get' name='ad_raspberry_form'>";
+echo "          <div class='form-group'>";
+echo "              <label for='name'>Name:</label>";
+echo "              <input type='name' class='form-control' id='name' placeholder='Raspberry Pi Wohnzimmer' name='name' required>";
+echo "          </div>";
+echo "          <div class='form-group'>";
+echo "              <label for='ipv4'>IP-Adresse:</label>";
+echo "              <input type='text' class='form-control' id='ipv4' placeholder='192.168.0.1' name='ipv4' required>";
+echo "          </div>";                    
+echo "          <div class='form-group'>";
+echo "              <label for='port'>Port:</label>";
+echo "              <input type='number' class='form-control' id='port' placeholder='80' name='port' required>";
+echo "          </div>";
+echo "          <button type='submit' class='btn btn-success'>Anlegen</button>";
+echo "          <button type='button' class='btn btn-default' data-dismiss='modal'>Schließen</button>";
+echo "      </form>";
+echo "  </div>";
+echo "  </div>";
+echo "</div>";
+echo "</div>";
+?>
