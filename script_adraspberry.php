@@ -1,10 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "smarthomedb";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'mysql\mysql_login.php';
+
+$conn = new mysqli(getServerName(), getUserName(), getPassword(), getDBName());  
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

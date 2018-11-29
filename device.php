@@ -13,8 +13,8 @@
 <body>
 
 <?php include 'navbar.php';?>
-<?php include 'form_login.php';?>
-<?php include 'form_insertdevice.php';?>
+<?php include 'form\form_login.php';?>
+<?php include 'form\form_insertdevice.php';?>
 <?php include 'devicelist.php';?>
 
 
