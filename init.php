@@ -1,24 +1,32 @@
 <?php
 
-include 'mysql\mysql_functions.php'
 # verbindung zu db aufbauen
-getMySQLConnection();
+include 'mysql\mysql_login.php';
+$conn = new mysqli(getServerName(), getUserName(), getPassword(), getDBName()); 
 
 # db anlegen
-$sql = 'CREATE DATABASE smarthomedb2;';
-executeQuery($conn, $sql);
+$sql = 'CREATE DATABASE '.getDBName().';';
+if (mysqli_query($conn, $sql)) {
+    echo "Query executed!";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 
 # tabellen anlegen
-$sql = 'CREATE TABLE `smarthomedb`.`device` 
+$sql = 'CREATE TABLE '.getDBName().'.`device` 
 ( `ldfnr.` INT NOT NULL AUTO_INCREMENT , `name` 
 TEXT NOT NULL , `ipv4` TEXT NOT NULL , `port` INT NOT NULL , 
 PRIMARY KEY (`ldfnr.`)) ENGINE = InnoDB;';
+if (mysqli_query($conn, $sql)) {
+    echo "Query executed!";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 
-executeQuery($conn, $sql);
 # tabellen füllen
 
 # verbindung zu db beenden
 mysqli_close($conn);
-header("Location:".$_SERVER['SERVER_ADDR']."\index.php");
+header("Location: index.php");
 
 ?>

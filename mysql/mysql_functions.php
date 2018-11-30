@@ -15,7 +15,7 @@ function getMySQLConnection(){
         die("Connection failed: " . $conn->connect_error);
     }
     #echo "Connected successfully";
-    #return($conn);
+    return($conn);
 }
 
 function addMenuItems(){

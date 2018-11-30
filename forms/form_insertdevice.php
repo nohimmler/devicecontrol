@@ -7,7 +7,7 @@ echo "      <button type='button' class='close' data-dismiss='modal'>&times;</bu
 echo "      <h4 class='modal-title'>neues Gerät anlegen</h4>";
 echo "  </div>";
 echo "  <div class='modal-body'>";
-echo "      <form action= 'script\script_adraspberry.php method='get' name='ad_raspberry_form'>";
+echo "      <form action='script\script_adraspberry.php' method='get'>";
 echo "          <div class='form-group'>";
 echo "              <label for='name'>Name:</label>";
 echo "              <input type='name' class='form-control' id='name' placeholder='Raspberry Pi Wohnzimmer' name='name' required>";
@@ -20,7 +20,7 @@ echo "          <div class='form-group'>";
 echo "              <label for='port'>Port:</label>";
 echo "              <input type='number' class='form-control' id='port' placeholder='80' name='port' required>";
 echo "          </div>";
-echo "          <button type='submit' class='btn btn-success'>Anlegen</button>";
+echo "          <input type='submit' class='btn btn-success' value='Anlegen'>";
 echo "          <button type='button' class='btn btn-default' data-dismiss='modal'>Schließen</button>";
 echo "      </form>";
 echo "  </div>";
