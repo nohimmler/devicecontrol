@@ -13,10 +13,10 @@
 <body>
 
 <?php 
-    include $_SERVER['SERVER_ADDR'].'\navbar.php';
-    include $_SERVER['SERVER_ADDR'].'\form\form_login.php';
-    include $_SERVER['SERVER_ADDR'].'\form\form_insertdevice.php';
-    include $_SERVER['SERVER_ADDR'].'\devicelist.php';
+    include 'navbar.php';
+    include 'forms\form_login.php';
+    include 'forms\form_insertdevice.php';
+    include 'devicelist.php';
 ?>
 
 </body>

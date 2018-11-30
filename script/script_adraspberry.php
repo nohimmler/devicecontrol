@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['SERVER_ADDR'].'\mysql\mysql_functions.php';
+include 'mysql\mysql_functions.php';
 
 $conn = getMySQLConnection(); 
 #$name =$_GET["name"];

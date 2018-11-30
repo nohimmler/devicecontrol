@@ -1,15 +1,19 @@
 <?php
 
-include $_SERVER['SERVER_ADDR'].'\mysql\mysql_functions.php'
+include 'mysql\mysql_functions.php'
 # verbindung zu db aufbauen
-$conn = getMySQLConnection();
+getMySQLConnection();
 
 # db anlegen
-$sql = '';
+$sql = 'CREATE DATABASE smarthomedb2;';
 executeQuery($conn, $sql);
 
 # tabellen anlegen
-$sql = '';
+$sql = 'CREATE TABLE `smarthomedb`.`device` 
+( `ldfnr.` INT NOT NULL AUTO_INCREMENT , `name` 
+TEXT NOT NULL , `ipv4` TEXT NOT NULL , `port` INT NOT NULL , 
+PRIMARY KEY (`ldfnr.`)) ENGINE = InnoDB;';
+
 executeQuery($conn, $sql);
 # tabellen füllen
 

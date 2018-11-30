@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['SERVER_ADDR'].'\mysql\mysql_functions.php';
+include 'mysql\mysql_functions.php';
 
 echo "<nav class='navbar navbar-inverse'>";
     echo "<div class='container-fluid'>";
