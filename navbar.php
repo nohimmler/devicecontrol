@@ -1,6 +1,6 @@
 <?php
 
-include 'mysql\mysql_functions.php';
+include $_SERVER['SERVER_ADDR'].'\mysql\mysql_functions.php';
 
 echo "<nav class='navbar navbar-inverse'>";
     echo "<div class='container-fluid'>";
@@ -20,7 +20,7 @@ echo "<nav class='navbar navbar-inverse'>";
                 echo "</ul></li>";
             echo "</ul>";
             echo "<ul class='nav navbar-nav navbar-right'>";
-                echo "<li><a href='#'><span class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#newRaspberry'> Raspberry Pi anlegen</span></a></li>";
+                echo "<li><a href='#'><span class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#newRaspberry'> Gerät anlegen</span></a></li>";
                 echo "<li><a href='#'><span class='glyphicon glyphicon-log-in' data-toggle='modal' data-target='#Login'> Anmelden</span></a></li>";
             echo "</ul>";
         echo "</div>";

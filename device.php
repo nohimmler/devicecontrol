@@ -12,12 +12,12 @@
 </head>
 <body>
 
-<?php include 'navbar.php';?>
-<?php include 'form\form_login.php';?>
-<?php include 'form\form_insertdevice.php';?>
-<?php include 'devicelist.php';?>
-
-
+<?php 
+    include $_SERVER['SERVER_ADDR'].'\navbar.php';
+    include $_SERVER['SERVER_ADDR'].'\form\form_login.php';
+    include $_SERVER['SERVER_ADDR'].'\form\form_insertdevice.php';
+    include $_SERVER['SERVER_ADDR'].'\devicelist.php';
+?>
 
 </body>
 </html>
