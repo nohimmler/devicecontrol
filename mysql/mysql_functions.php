@@ -20,7 +20,7 @@ function getMySQLConnection(){
 
 function addMenuItems(){
     $conn = getMySQLConnection();          
-    $sql = "SELECT name FROM raspberry";
+    $sql = "SELECT * FROM device";
     $result = mysqli_query($conn, $sql);
 
     while($row = $result->fetch_assoc()) {

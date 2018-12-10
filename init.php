@@ -2,7 +2,7 @@
 
 # verbindung zu db aufbauen
 include 'mysql\mysql_login.php';
-$conn = new mysqli(getServerName(), getUserName(), getPassword(), getDBName()); 
+$conn = new mysqli(getServerName(), getUserName(), getPassword(), ''); 
 
 # db anlegen
 $sql = 'CREATE DATABASE '.getDBName().';';
@@ -27,6 +27,6 @@ if (mysqli_query($conn, $sql)) {
 
 # verbindung zu db beenden
 mysqli_close($conn);
-header("Location: index.php");
+#header("Location: index.php");
 
 ?>
