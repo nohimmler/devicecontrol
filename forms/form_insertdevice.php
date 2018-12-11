@@ -1,16 +1,16 @@
 
 <div class='modal fade' id='newRaspberry' role='dialog'>
-<div class='modal-dialog'>
-<div class='modal-content'>
-<div class='modal-header'>
-      <button type='button' class='close' data-dismiss='modal'>&times;</button>
-      <h4 class='modal-title'>neues Gerät anlegen</h4>
-  </div>
-  <div class='modal-body'>
-      <form action='..\script\script_adraspberry.php' method='get'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal'>&times;</button>
+          <h4 class='modal-title'>neues Gerät anlegen</h4>
+      </div>
+      <div class='modal-body'>
+        <form action='..\script\script_adraspberry.php' method='get'>
           <div class='form-group'>
-              <label for='name'>Name:</label>
-              <input type='name' class='form-control' id='name' placeholder='Raspberry Pi Wohnzimmer' name='name' required>
+            <label for='name'>Name:</label>
+            <input type='name' class='form-control' id='name' placeholder='Raspberry Pi Wohnzimmer' name='name' required>
           </div>
           <div class='form-group'>
               <label for='ipv4'>IP-Adresse:</label>
@@ -22,8 +22,8 @@
           </div>
           <input type='submit' class='btn btn-success' value='Anlegen'>
           <button type='button' class='btn btn-default' data-dismiss='modal'>Schließen</button>
-      </form>
+        </form>
+      </div>
+    </div>
   </div>
-  </div>
-</div>
 </div>
