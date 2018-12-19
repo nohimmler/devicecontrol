@@ -13,7 +13,7 @@ function getPassword(){
 }
 
 function getDBName(){
-    return('smarthomedb');
+    return('smarthomedb2');
 }
 
 ?>
