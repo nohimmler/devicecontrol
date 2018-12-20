@@ -14,9 +14,9 @@ if (mysqli_query($conn, $sql)) {
 
 # tabellen anlegen
 $sql = 'CREATE TABLE '.getDBName().'.`device` 
-( `ldfnr.` INT NOT NULL AUTO_INCREMENT , `name` 
+( `id` INT NOT NULL AUTO_INCREMENT , `name` 
 TEXT NOT NULL , `ipv4` TEXT NOT NULL , `port` INT NOT NULL , 
-PRIMARY KEY (`ldfnr.`)) ENGINE = InnoDB;';
+PRIMARY KEY (`id`)) ENGINE = InnoDB;';
 if (mysqli_query($conn, $sql)) {
     echo "Query executed!";
 } else {

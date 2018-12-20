@@ -1,6 +1,6 @@
 
 <?php
-include 'mysql\mysql_functions.php';
+include 'mysql/mysql_functions.php';
 ?>
 
 <nav class='navbar navbar-inverse'>
@@ -22,7 +22,7 @@ include 'mysql\mysql_functions.php';
                 </li>
             </ul>";
             <ul class='nav navbar-nav navbar-right'>";
-                <li><a href='#'><span class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#newRaspberry'> Gerät anlegen</span></a></li>
+                <li><a href='#'><span class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#newDevice'> Gerät anlegen</span></a></li>
                 <li><a href='#'><span class='glyphicon glyphicon-log-in' data-toggle='modal' data-target='#Login'> Anmelden</span></a></li>
             </ul>
         </div>

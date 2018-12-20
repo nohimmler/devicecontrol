@@ -14,10 +14,19 @@
 
 <?php 
     include 'navbar.php';
-    include 'forms\form_insertdevice.php';
-    include 'forms\form_login.php';
+    include 'forms\modal_insertdevice.php';
+    include 'forms\modal_login.php';
+    include 'forms\modal_device.php';
 ?>
 <img src="image\qrcode.png">
+
+<script>
+
+$(document).on('click', '.device_cont button', function(){
+        $("#deviceinfo").modal();
+});
+
+</script>
 
 </body>
 </html>

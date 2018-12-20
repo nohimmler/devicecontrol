@@ -14,8 +14,8 @@
 
 <?php 
     include 'navbar.php';
-    include 'forms\form_login.php';
-    include 'forms\form_insertdevice.php';
+    include 'forms/form_login.php';
+    include 'forms/form_insertdevice.php';
     include 'devicelist.php';
 ?>
 
